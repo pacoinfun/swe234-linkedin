@@ -21,6 +21,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
+import { MessagesPanel } from "@/components/messages-panel"
 
 export default function LinkedInInterface() {
   return (
@@ -466,31 +467,7 @@ export default function LinkedInInterface() {
 
       {/* Messages */}
       <div className="fixed bottom-0 right-6 z-10">
-        <div className="bg-card rounded-t-lg border shadow-lg w-64">
-          <div className="p-3 border-b flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <MessageSquare className="h-5 w-5" />
-              <span className="font-medium">Messages</span>
-              <Badge variant="destructive" className="rounded-full text-xs">
-                9
-              </Badge>
-            </div>
-            <Button variant="ghost" size="icon" className="h-6 w-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-              >
-                <polyline points="18 15 12 9 6 15"></polyline>
-              </svg>
-            </Button>
-          </div>
-        </div>
+        <MessagesPanel />
       </div>
     </div>
   )

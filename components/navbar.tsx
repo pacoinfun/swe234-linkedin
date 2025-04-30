@@ -32,8 +32,8 @@ export function Navbar() {
               <NavItem icon={<Home className="h-6 w-6" />} active />
               <NavItem icon={<Users className="h-6 w-6" />} />
               <NavItem icon={<Briefcase className="h-6 w-6" />} />
-              <NavItem icon={<MessageSquare className="h-6 w-6" />} badge="7" />
-              <NavItem icon={<Bell className="h-6 w-6" />} badge="14" />
+              <NavItem icon={<MessageSquare className="h-6 w-6" />} badge="6" />
+              <NavItem icon={<Bell className="h-6 w-6" />} badge="9" />
               <NavItem
                 icon={
                   <Avatar className="h-6 w-6">
